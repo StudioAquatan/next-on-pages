@@ -141,7 +141,7 @@ export default {
         );
       }
 
-      if (route.src?.match(/^\^\/_next\/data\/.+\/\.json\$$/) && route.dest) {
+      if (route.src?.match(/^\^\/_next\/data\/.+\.json\$$/) && route.dest) {
         pathname = route.dest;
       }
     }
