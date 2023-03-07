@@ -140,6 +140,10 @@ export default {
           context
         );
       }
+
+      if (route.src?.match(/^\^\/_next\/data\/.+\/\.json\$$/) && route.dest) {
+        pathname = route.dest;
+      }
     }
 
     for (const { matchers, entrypoint } of Object.values(__FUNCTIONS__)) {
